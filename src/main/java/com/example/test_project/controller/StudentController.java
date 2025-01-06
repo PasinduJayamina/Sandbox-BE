@@ -28,11 +28,6 @@ public class StudentController {
         return "Hello Pasindu";
     }
 
-    @GetMapping("/say")
-    public String sayHello(){
-        return "Hello World";
-    }
-
     //get std by id
     @Operation(summary = "Get a student by ID")
     @GetMapping("/{id}")
