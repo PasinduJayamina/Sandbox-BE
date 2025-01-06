@@ -23,9 +23,9 @@ public class StudentController {
         return studentService.getAllStudent();
     }
 
-    @GetMapping
-    public String hello(){
-        return "Hello World";
+    @GetMapping("/test")
+    public String test(){
+        return "Hello Pasindu";
     }
 
     //get std by id
