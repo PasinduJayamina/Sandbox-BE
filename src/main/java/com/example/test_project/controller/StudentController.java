@@ -18,9 +18,14 @@ public class StudentController {
 
     //get all std
     @Operation(summary = "Get all students")
-    @GetMapping
+    @GetMapping("/all")
     public List<Student> getAllStudents(){
         return studentService.getAllStudent();
+    }
+
+    @GetMapping
+    public String hello(){
+        return "Hello World";
     }
 
     //get std by id
